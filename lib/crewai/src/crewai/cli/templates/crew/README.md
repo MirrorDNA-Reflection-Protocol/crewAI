@@ -20,7 +20,9 @@ crewai install
 ```
 ### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Add your API_KEY into the `.env` file**
+- For OpenAI: `OPENAI_API_KEY=sk-...`
+- For Ollama: `API_BASE=http://localhost:11434` and `MODEL=ollama/llama3.2` (no key required)
 
 - Modify `src/{{folder_name}}/config/agents.yaml` to define your agents
 - Modify `src/{{folder_name}}/config/tasks.yaml` to define your tasks
