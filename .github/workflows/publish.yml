@@ -60,8 +60,7 @@ jobs:
           path: dist
 
       - name: Publish to PyPI
-        env:
-          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+
         run: |
           failed=0
           for package in dist/*; do
